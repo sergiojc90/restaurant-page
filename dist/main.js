@@ -1,2 +1,2 @@
-alert("Setup running");
+(()=>{"use strict";(e=>{const t=document.createElement("nav"),n=document.createElement("div"),a=document.createElement("ul");t.classList.add("nav"),n.classList.add("nav--logo"),a.classList.add("nav--ul"),["Home","About","Menu","Testimonials","Team","Contact"].forEach(((e,t)=>{const n=document.createElement("li");n.textContent=e,n.dataset.index=t,a.appendChild(n)})),t.appendChild(n),t.appendChild(a),e.appendChild(t)})(document.getElementById("content"))})();
 //# sourceMappingURL=main.js.map
