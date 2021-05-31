@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://restaurant-page/./src/index.js"],"names":["alert"],"mappings":"AAAAA,MAAM","file":"main.js","sourcesContent":["alert(\"Setup running\");"],"sourceRoot":""}
