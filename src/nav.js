@@ -7,10 +7,11 @@ const navBar = (contentDiv,sections) =>{
     nav.classList.add("nav");
     logo.classList.add("nav--logo");
     ul.classList.add("nav--ul");
-
+    
     sections.forEach((element) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
+        a.classList.add("nav--ul__a")
         a.textContent = element;
         a.id = element;
         li.appendChild(a);
