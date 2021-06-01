@@ -1,6 +1,5 @@
-const navBar = (contentDiv) =>{
+const navBar = (contentDiv,sections) =>{
 
-    const sections = ["Home","About","Menu","Testimonials","Team","Contact"]
     const nav = document.createElement("nav");
     const logo = document.createElement("div");
     const ul = document.createElement("ul");

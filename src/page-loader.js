@@ -1,15 +1,20 @@
 import{navBar} from "./nav";
+import{homeSection} from "./home";
+import{aboutSection} from "./about";
+import{menuSection} from "./menu";
+import{feedbackSection} from "./feedbacks";
+import{teamSection} from "./team";
+import{contactSection} from "./contact";
 
+const pageLoader = (contentDiv,sections) =>{
 
-const pageLoader = () =>{
-    const contentDiv = document.getElementById("content");
-    navBar(contentDiv);
+    navBar(contentDiv,sections);
 
     const tabs = document.querySelectorAll("li");
-
-    tabs.forEach(element =>{
-        element.addEventListener
-    })
-}
+    const callSections = [homeSection(),aboutSection(),menuSection(),feedbackSection(),teamSection(),contactSection()];
+    tabs.forEach((element,index) =>{
+        element.addEventListener("click", callSections[index]);
+    });
+};
 
 export {pageLoader};

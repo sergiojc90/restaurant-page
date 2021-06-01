@@ -1,4 +1,4 @@
-const menuSection = (contentDiv) => {
+const feedbackSection = (contentDiv) => {
 
     const feedbackItems = [
         {name:"Sergio Juárez",position:"Food Specialist",comment:"Amazing food, thanks for the experience"},
@@ -39,4 +39,4 @@ const menuSection = (contentDiv) => {
     contentDiv.appendChild(section);
 }
 
-export {menuSection};
+export {feedbackSection};

@@ -1,4 +1,4 @@
-const contact = (contentDiv) =>{
+const contactSection = (contentDiv) =>{
     const section = document.createElement("section");
     const location = document.createElement("div");
     const opening = document.createElement("div");
@@ -39,4 +39,4 @@ const contact = (contentDiv) =>{
     contentDiv.appendChild(section);
 };
 
-export {contact};
+export {contactSection};
