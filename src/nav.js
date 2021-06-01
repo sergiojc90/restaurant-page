@@ -14,7 +14,7 @@ const navBar = (contentDiv,sections) =>{
     span.textContent = "restaurant";
     ul.classList.add("nav--ul");
 
-    aLogo.appendChild(span);
+    logo.appendChild(span);
     logo.appendChild(aLogo);
     
     sections.forEach((element) => {
