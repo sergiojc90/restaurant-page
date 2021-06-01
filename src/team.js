@@ -1,12 +1,13 @@
 const teamSection = (contentDiv) => {
 
     const teamItems = [
-        {name:"Emma Rosado",position:"Head Chef",src:"./assets/team/1.jpg"},
+        {name:"Wendy Vázquez",position:"Head Chef",src:"./assets/team/1.jpg"},
         {name:"Sergio Juárez",position:"Sous Chef",src:"./assets/team/2.jpg"},
-        {name:"Wendy Vázquez",position:"Sous Chef",src:"./assets/team/3.jpg"},
+        {name:"Emma Rosado",position:"Sous Chef",src:"./assets/team/3.jpg"},
     ]
 
     const section = document.createElement("section");
+    section.classList.add("content--team--section");
     const h1 = document.createElement("h1");
     const team = document.createElement("article");
 

@@ -7,6 +7,7 @@ const feedbackSection = (contentDiv) => {
     ]
 
     const section = document.createElement("section");
+    section.classList.add("content--feedbacks--section");
     const h1 = document.createElement("h1");
     const feedbacks = document.createElement("article");
 

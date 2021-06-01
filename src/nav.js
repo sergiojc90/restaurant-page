@@ -10,8 +10,10 @@ const navBar = (contentDiv,sections) =>{
 
     sections.forEach((element,index) => {
         const li = document.createElement("li");
-        li.textContent = element;
+        const a = document.createElement("a");
+        a.textContent = element;
         li.dataset.index = index;
+        li.appendChild(a);
         ul.appendChild(li);
     });
 

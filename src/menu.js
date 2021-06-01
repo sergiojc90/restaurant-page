@@ -12,6 +12,7 @@ const menuSection = (contentDiv) => {
     ]
 
     const section = document.createElement("section");
+    section.classList.add("content--menu--section");
     const h1 = document.createElement("h1");
     const menu = document.createElement("article");
 
