@@ -8,11 +8,11 @@ const navBar = (contentDiv,sections) =>{
     logo.classList.add("nav--logo");
     ul.classList.add("nav--ul");
 
-    sections.forEach((element,index) => {
+    sections.forEach((element) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
         a.textContent = element;
-        li.dataset.index = index;
+        a.id = element;
         li.appendChild(a);
         ul.appendChild(li);
     });
