@@ -39,7 +39,7 @@ const navBar = (contentDiv,sections) =>{
 
     toggleButton.addEventListener("click",() =>{
         const navBarLinks = document.querySelector(".nav--ul");
-        navBarLinks.classList.toggle("active")
+        navBarLinks.classList.toggle("active");
     })
 
     contentDiv.appendChild(nav);

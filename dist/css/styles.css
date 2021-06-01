@@ -67,6 +67,7 @@ body {
   padding: 0 1rem;
   display: block;
 }
+
 .nav--ul__li a:hover {
   cursor: pointer;
   color: var(--main-color);

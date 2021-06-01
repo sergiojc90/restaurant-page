@@ -17,30 +17,49 @@ const pageLoader = (contentDiv,sections) =>{
     const feedback = document.getElementById("Testimonials");
     const team = document.getElementById("Team");
     const contact = document.getElementById("Contact");
+    const navBarLinks = document.querySelector(".nav--ul");
 
     home.addEventListener("click",() =>{
         contentDiv.removeChild(contentDiv.lastChild);
         homeSection(contentDiv);
+        if (navBarLinks.classList.contains("active")){
+            navBarLinks.classList.remove("active");
+        }
     });
     about.addEventListener("click",() =>{
         contentDiv.removeChild(contentDiv.lastChild);
         aboutSection(contentDiv);
+        if (navBarLinks.classList.contains("active")){
+            navBarLinks.classList.remove("active");
+        }
     });
     menu.addEventListener("click",() =>{
         contentDiv.removeChild(contentDiv.lastChild);
         menuSection(contentDiv);
+        if (navBarLinks.classList.contains("active")){
+            navBarLinks.classList.remove("active");
+        }
     });
     feedback.addEventListener("click",() =>{
         contentDiv.removeChild(contentDiv.lastChild);
         feedbackSection(contentDiv);
+        if (navBarLinks.classList.contains("active")){
+            navBarLinks.classList.remove("active");
+        }
     });
     team.addEventListener("click",() =>{
         contentDiv.removeChild(contentDiv.lastChild);
         teamSection(contentDiv);
+        if (navBarLinks.classList.contains("active")){
+            navBarLinks.classList.remove("active");
+        }
     });
     contact.addEventListener("click",() =>{
         contentDiv.removeChild(contentDiv.lastChild);
         contactSection(contentDiv);
+        if (navBarLinks.classList.contains("active")){
+            navBarLinks.classList.remove("active");
+        }
     });
 };
 
