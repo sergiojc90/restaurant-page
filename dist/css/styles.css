@@ -14,6 +14,20 @@
   padding: 0;
 }
 
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -49,36 +63,59 @@ body {
   list-style-type: none;
 }
 
-.nav--ul li {
+.nav--ul__li {
   padding: 0 1rem;
+  display: block;
 }
-.nav--ul li:hover {
+.nav--ul__li a:hover {
   cursor: pointer;
   color: var(--main-color);
   text-decoration: underline;
 }
 
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+.nav--toggle-button {
+  position: absolute;
+  top: 2.1rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 2.1rem;
+}
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+.nav--toggle-button span {
+  height: 3px;
+  width: 100%;
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+@media (max-width: 720px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-  /* Support for IE. */
-  font-feature-settings: "liga";
+  .nav--toggle-button {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .nav--ul {
+    flex-direction: column;
+    flex-direction: 100%;
+    width: 100%;
+  }
+
+  .nav--ul.active {
+    display: flex;
+  }
+
+  .nav--ul {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
 }
