@@ -14,6 +14,7 @@ const menuSection = (contentDiv) => {
     const section = document.createElement("section");
     section.classList.add("content--menu--section");
     const h1 = document.createElement("h1");
+    h1.textContent = "Our Menu";
     const menu = document.createElement("article");
 
     menuItems.forEach(element => {
