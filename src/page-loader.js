@@ -18,49 +18,53 @@ const pageLoader = (contentDiv,sections) =>{
     const team = document.getElementById("Team");
     const contact = document.getElementById("Contact");
     const navBarLinks = document.querySelector(".nav--ul");
+    const footer = document.createElement("footer");
+    const footer_a = document.createElement("a");
+    footer_a.setAttribute("href","https://github.com/sergiojc90/restaurant-page");
+    footer_a.setAttribute("target","_blank")
+    footer_a.textContent = "Sergio Juárez";
+    footer.textContent = "Developed by ";
+    footer.appendChild(footer_a);
+
+    contentDiv.appendChild(footer);
 
     home.addEventListener("click",() =>{
-        contentDiv.removeChild(contentDiv.lastChild);
+        reload();
         homeSection(contentDiv);
-        if (navBarLinks.classList.contains("active")){
-            navBarLinks.classList.remove("active");
-        }
+        contentDiv.appendChild(footer);
     });
     about.addEventListener("click",() =>{
-        contentDiv.removeChild(contentDiv.lastChild);
+        reload();
         aboutSection(contentDiv);
-        if (navBarLinks.classList.contains("active")){
-            navBarLinks.classList.remove("active");
-        }
+        contentDiv.appendChild(footer);
     });
     menu.addEventListener("click",() =>{
-        contentDiv.removeChild(contentDiv.lastChild);
+        reload();
         menuSection(contentDiv);
-        if (navBarLinks.classList.contains("active")){
-            navBarLinks.classList.remove("active");
-        }
+        contentDiv.appendChild(footer);
     });
     feedback.addEventListener("click",() =>{
-        contentDiv.removeChild(contentDiv.lastChild);
+        reload();
         feedbackSection(contentDiv);
-        if (navBarLinks.classList.contains("active")){
-            navBarLinks.classList.remove("active");
-        }
+        contentDiv.appendChild(footer);
     });
     team.addEventListener("click",() =>{
-        contentDiv.removeChild(contentDiv.lastChild);
+        reload();
         teamSection(contentDiv);
-        if (navBarLinks.classList.contains("active")){
-            navBarLinks.classList.remove("active");
-        }
+        contentDiv.appendChild(footer);
     });
     contact.addEventListener("click",() =>{
-        contentDiv.removeChild(contentDiv.lastChild);
+        reload();
         contactSection(contentDiv);
+        contentDiv.appendChild(footer);
+    });
+
+    function reload(){
+        contentDiv.removeChild(contentDiv.childNodes[1]);
         if (navBarLinks.classList.contains("active")){
             navBarLinks.classList.remove("active");
         }
-    });
+    }
 };
 
 export {pageLoader};

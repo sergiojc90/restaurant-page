@@ -18,7 +18,7 @@
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px; /* Preferred icon size */
+  font-size: 32px !important; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -26,6 +26,83 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: var(--white-light);
+}
+
+.content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.nav--logo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: var(--main-color);
+}
+
+.nav--logo a {
+  font-size: 2.6rem;
+  margin-inline-end: 1rem;
+  font-weight: 700;
+}
+.nav--ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav--ul__li {
+  color: var(--white);
+  font-weight: 500;
+  padding: 0 1rem;
+  display: block;
+}
+
+.nav--ul__li a:hover {
+  cursor: pointer;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.nav--toggle-button {
+  position: absolute;
+  top: 2.1rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 2.1rem;
+}
+
+.nav--toggle-button span {
+  height: 3px;
+  width: 100%;
+  background-color: var(--main-color);
+  border-radius: 10px;
 }
 
 /* Media querie for toggle button */
@@ -48,6 +125,7 @@
 
   .nav--ul.active {
     display: flex;
+    background-color: var(--dark);
   }
 
   .nav--ul {
@@ -56,70 +134,15 @@
     text-align: center;
     padding: 0.5rem 0;
   }
-}
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  color: var(--white-light);
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2rem;
-}
-
-.nav--logo {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  color: var(--main-color);
-}
-
-.nav--logo a {
-  margin-inline-end: 1rem;
-  font-weight: 700;
-}
-.nav--ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.nav--ul__li {
-  padding: 0 1rem;
-  display: block;
-}
-
-.nav--ul__li a:hover {
-  cursor: pointer;
-  color: var(--main-color);
-  text-decoration: underline;
-}
-
-.nav--toggle-button {
-  position: absolute;
-  top: 2.1rem;
-  right: 2rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 3rem;
-  height: 2.1rem;
-}
-
-.nav--toggle-button span {
-  height: 3px;
-  width: 100%;
-  background-color: var(--main-color);
-  border-radius: 10px;
+  .nav--ul__li {
+    cursor: pointer;
+    padding: 0.5rem 0;
+  }
+  .nav--ul__li:hover {
+    background-color: var(--main-color);
+    color: var(--dark);
+  }
 }
 
 .content--home--section::before {
@@ -147,4 +170,56 @@ body {
   background-color: #000000;
   opacity: 0.7;
   z-index: -1;
+}
+
+.content--home--section {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.content--home--section h1 {
+  font-family: var(--cursive-font);
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.content--home--section p {
+  font-size: 1.6rem;
+}
+
+.content--home--section button {
+  margin-top: 5rem;
+  border: 2px solid var(--main-color);
+  padding: 1rem 3rem;
+  background-color: transparent;
+  color: var(--main-color);
+  border-radius: 3rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.content--home--section button:hover {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+footer {
+  padding: 20px 0;
+  color: var(--white);
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: bold;
 }
