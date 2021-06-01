@@ -241,10 +241,12 @@ body {
   align-items: center;
   width: 100%;
   margin-block-start: 2rem;
+  background-color: var(--dark);
 }
 
 .content--about__description {
   width: 320px;
+  font-size: 1.4rem;
 }
 
 .content--about__p {
@@ -273,6 +275,7 @@ body {
 
 footer {
   padding: 20px 0;
+  background-color: var(--dark);
   color: var(--white);
 }
 
