@@ -11,7 +11,7 @@ const pageLoader = (contentDiv,sections) =>{
     navBar(contentDiv,sections);
 
     const tabs = document.querySelectorAll("li");
-    const callSections = [homeSection(),aboutSection(),menuSection(),feedbackSection(),teamSection(),contactSection()];
+    const callSections = [homeSection(contentDiv),aboutSection(contentDiv),menuSection(contentDiv),feedbackSection(contentDiv),teamSection(contentDiv),contactSection(contentDiv)];
     tabs.forEach((element,index) =>{
         element.addEventListener("click", callSections[index]);
     });

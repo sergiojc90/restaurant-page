@@ -24,8 +24,8 @@ const contactSection = (contentDiv) =>{
 
     openingH2.textContent = "Opening Hours";
     openingP.textContent = "Monday to Sunday <br/> 9:00 AM - 12:00 PM";
-    openingP.appendChild(openingH2);
-    openingP.appendChild(openingP);
+    opening.appendChild(openingH2);
+    opening.appendChild(openingP);
     
     contactUsH2.textContent = "Contact Us";
     contactUsP.textContent = "99 92432210 <br/> info@gmail.com";

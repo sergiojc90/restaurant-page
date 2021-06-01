@@ -1,14 +1,14 @@
 const menuSection = (contentDiv) => {
 
     const menuItems = [
-        {name:"Item 1",price:"$10.00",src:"./assets/1.jpg"},
-        {name:"Item 2",price:"$20.00",src:"./assets/2.jpg"},
-        {name:"Item 3",price:"$30.00",src:"./assets/3.jpg"},
-        {name:"Item 4",price:"$40.00",src:"./assets/4.jpg"},
-        {name:"Item 5",price:"$50.00",src:"./assets/5.jpg"},
-        {name:"Item 6",price:"$60.00",src:"./assets/6.jpg"},
-        {name:"Item 7",price:"$70.00",src:"./assets/7.jpg"},
-        {name:"Item 8",price:"$80.00",src:"./assets/8.jpg"},
+        {name:"Item 1",price:"$10.00",src:"./assets/menu/1.jpg"},
+        {name:"Item 2",price:"$20.00",src:"./assets/menu/2.jpg"},
+        {name:"Item 3",price:"$30.00",src:"./assets/menu/3.jpg"},
+        {name:"Item 4",price:"$40.00",src:"./assets/menu/4.jpg"},
+        {name:"Item 5",price:"$50.00",src:"./assets/menu/5.jpg"},
+        {name:"Item 6",price:"$60.00",src:"./assets/menu/6.jpg"},
+        {name:"Item 7",price:"$70.00",src:"./assets/menu/7.jpg"},
+        {name:"Item 8",price:"$80.00",src:"./assets/menu/8.jpg"},
     ]
 
     const section = document.createElement("section");
