@@ -28,6 +28,36 @@
   direction: ltr;
 }
 
+/* Media querie for toggle button */
+@media (max-width: 720px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav--toggle-button {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .nav--ul {
+    flex-direction: column;
+    flex-direction: 100%;
+    width: 100%;
+  }
+
+  .nav--ul.active {
+    display: flex;
+  }
+
+  .nav--ul {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
@@ -90,33 +120,4 @@ body {
   width: 100%;
   background-color: var(--main-color);
   border-radius: 10px;
-}
-
-@media (max-width: 720px) {
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav--toggle-button {
-    display: flex;
-    cursor: pointer;
-  }
-
-  .nav--ul {
-    flex-direction: column;
-    flex-direction: 100%;
-    width: 100%;
-  }
-
-  .nav--ul.active {
-    display: flex;
-  }
-
-  .nav--ul {
-    display: none;
-    width: 100%;
-    text-align: center;
-    padding: 0.5rem 0;
-  }
 }
