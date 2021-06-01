@@ -106,7 +106,7 @@ body {
 }
 
 /* Media querie for toggle button */
-@media (max-width: 720px) {
+@media (max-width: 780px) {
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -143,6 +143,9 @@ body {
     background-color: var(--main-color);
     color: var(--dark);
   }
+  .nav--ul__li a:hover {
+    color: var(--dark);
+  }
 }
 
 .content--home--section::before {
@@ -157,7 +160,6 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -2;
-  animation: zoomInOut 20s ease infinite;
 }
 
 .content--home--section::after {
@@ -206,6 +208,67 @@ body {
 .content--home--section button:hover {
   color: var(--white);
   background-color: var(--main-color);
+}
+
+.content--about--section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark);
+  z-index: -1;
+}
+
+.content--about--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content--about--section h1 {
+  color: var(--white);
+  margin-block-start: -10px;
+}
+
+.content--about__subsection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-block-start: 2rem;
+}
+
+.content--about__description {
+  width: 320px;
+}
+
+.content--about__p {
+  padding: 1rem;
+}
+
+.content--about__button {
+  margin: 1rem 0;
+  border: 2px solid var(--main-color);
+  padding: 1rem 3rem;
+  background-color: transparent;
+  color: var(--main-color);
+  border-radius: 3rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.content--about__subImage {
+  width: 300px;
+  height: 200px;
+  background-image: url("../assets/about-img.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1rem;
 }
 
 footer {
