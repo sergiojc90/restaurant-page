@@ -55,6 +55,7 @@ h1 {
   text-align: center;
 }
 
+/* Start Navigation Bar */
 .nav {
   display: flex;
   flex-direction: row;
@@ -109,6 +110,7 @@ h1 {
   background-color: var(--main-color);
   border-radius: 10px;
 }
+/* End Navigation Bar */
 
 /* Media querie for toggle button */
 @media (max-width: 780px) {
@@ -152,7 +154,9 @@ h1 {
     color: var(--dark);
   }
 }
+/* End Media Queries */
 
+/* Start Home Section */
 .content--home--section::before {
   position: absolute;
   content: "";
@@ -214,6 +218,7 @@ h1 {
   color: var(--white);
   background-color: var(--main-color);
 }
+/* End Home Section */
 
 /* Start About section */
 .content--about--section::before {
@@ -440,6 +445,44 @@ h1 {
 /* End Team Section */
 
 /* Start contac Section */
+.content--contact--section::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/contact-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+.content--contact--section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.7;
+  z-index: -1;
+}
+.content--contact--section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-height: 500px;
+  margin-top: 30px;
+  color: var(--white);
+}
+
+.content--contact--item {
+  width: 250px;
+}
 /* End contac Section */
 
 footer {
