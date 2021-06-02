@@ -9,6 +9,7 @@ const teamSection = (contentDiv) => {
     const section = document.createElement("section");
     section.classList.add("content--team--section");
     const h1 = document.createElement("h1");
+    h1.textContent = "Our Team";
     const team = document.createElement("article");
 
     teamItems.forEach(element => {
