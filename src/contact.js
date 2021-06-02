@@ -14,9 +14,9 @@ const contactSection = (contentDiv) =>{
     const contactUsH2 = document.createElement("h2");
     const contactUsP = document.createElement("p");
     
-    location.classList.add("content--contact--location");
-    opening.classList.add("content--contact--opening");
-    contactUs.classList.add("content--contact--contactUs");
+    location.classList.add("content--contact--item");
+    opening.classList.add("content--contact--item");
+    contactUs.classList.add("content--contact--item");
 
     locationH2.textContent = "Our Location";
     locationP.textContent = "xyz Street, Sector-12 New Delhi - 000-000000"
