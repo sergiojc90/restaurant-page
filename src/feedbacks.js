@@ -9,6 +9,7 @@ const feedbackSection = (contentDiv) => {
     const section = document.createElement("section");
     section.classList.add("content--feedbacks--section");
     const h1 = document.createElement("h1");
+    h1.textContent = "Testimonials";
     const feedbacks = document.createElement("article");
 
     feedbackItems.forEach(element => {
