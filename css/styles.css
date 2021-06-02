@@ -45,6 +45,7 @@ body {
 
 h1 {
   font-family: var(--cursive-font);
+  color: var(--white);
 }
 
 .content {
@@ -362,9 +363,80 @@ h1 {
   margin: 5px;
   padding: 20px;
 }
+
+.content--feedback--item__name {
+  color: var(--white);
+}
+
+.content--feedback--item__position {
+  color: var(--main-color);
+  font-style: italic;
+}
 /* End Testimonials Section */
 
 /* Start Team Section */
+.content--team--section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark);
+  z-index: -1;
+}
+.content--team--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark);
+}
+.content--team--section article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  max-width: 950px;
+  margin-top: 2rem;
+  background-color: var(--dark);
+}
+
+.content--team--item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.content--team--item__img {
+  max-width: 280px;
+  border-radius: 20px;
+}
+.content--team--item__img:hover {
+  transform: scale(0.98);
+}
+
+.content--team--item__name,
+.content--team--item__position {
+  background-color: var(--dark-light);
+  width: 100%;
+}
+
+.content--team--item__name {
+  border-radius: 10px 10px 0 0;
+  color: var(--white);
+  margin-block-start: 5px;
+}
+
+.content--team--item__position {
+  border-radius: 0 0 10px 10px;
+  font-style: italic;
+}
 /* End Team Section */
 
 /* Start contac Section */
